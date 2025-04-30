@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pkl
+
+# Virtual environments
+venv/
+.env/
+.venv/
+env/
+ENV/
+.Python
+
+# Environment and secrets
+.env
+*.env
+.env.*
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Logs and local run artifacts
+*.log
+*.db
+*.sqlite3
+*.pid
+*.json
+*.csv
+*.tmp
+*.bak
+
+# Chroma vector storage (if generated)
+vector_store/chroma/
+
+# OS metadata
+.DS_Store
+Thumbs.db
