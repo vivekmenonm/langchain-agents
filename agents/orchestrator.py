@@ -1,19 +1,15 @@
 from langchain.agents import AgentExecutor, initialize_agent
 # from langchain.chat_models import ChatOpenAI
 from tools.summarizer import summarizer_tool
+from tools.mcp_tools import mcp_tools
 from tools.web_lookup import web_lookup_tool
 from agents.ticketing_agent import ticket_tools
 from agents.customer_agent import customer_tools
 from agents.calendar_agent import calendar_tools
 from langchain_openai import ChatOpenAI
 
-
-
 llm = ChatOpenAI(temperature=0)
-
-
-tools = ticket_tools + customer_tools + calendar_tools + [summarizer_tool, web_lookup_tool]
-
+tools = ticket_tools + customer_tools + calendar_tools + mcp_tools + [summarizer_tool, web_lookup_tool]
 
 agent_executor = initialize_agent(
     tools,
