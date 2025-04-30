@@ -16,6 +16,8 @@ ENV/
 
 # Environment and secrets
 .env
+*.env
+.env.*
 
 # VS Code
 .vscode/
