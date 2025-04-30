@@ -34,7 +34,7 @@ geo_lookup_tool = Tool.from_function(
     description="Get GPS coordinates (lat/lon) for any given address using OpenStreetMap"
 )
 
-# (Optional) 📝 Also add blog search tool here if not already
+# Also add blog search tool here if not already
 def search_blog(query: str) -> str:
     try:
         url = f"https://api.duckduckgo.com/?q={query}&format=json"
